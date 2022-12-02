@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#040303"
+    android:background="#00E31C1C"
     tools:context=".MainActivity">
 
     <ImageView
@@ -16,126 +16,160 @@
         android:layout_marginEnd="5dp"
         app:layout_constraintDimensionRatio="w,1:1"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/back" />
 
     <ImageButton
-        android:id="@+id/img10"
-        android:layout_width="123dp"
-        android:layout_height="0dp"
-        android:visibility="invisible"
-        app:layout_constraintDimensionRatio="h,1:1"
-        app:layout_constraintEnd_toStartOf="@+id/img11"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="@+id/back"
-        app:srcCompat="@drawable/empty"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="138dp" />
-
-    <ImageButton
-        android:id="@+id/img11"
-        android:layout_width="123dp"
-        android:layout_height="0dp"
-        android:visibility="invisible"
-        app:layout_constraintDimensionRatio="h,1:1"
-        app:layout_constraintEnd_toStartOf="@+id/img12"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/img10"
-        app:srcCompat="@drawable/empty"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="138dp" />
-
-    <ImageButton
         android:id="@+id/img00"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_marginBottom="8dp"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toTopOf="@+id/img10"
+        android:layout_width="0dp"
+        android:layout_height="115dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="13dp"
+        android:visibility="visible"
         app:layout_constraintDimensionRatio="h,1:1"
-        app:layout_constraintEnd_toStartOf="@+id/img01"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/back"
+        app:layout_constraintStart_toStartOf="@+id/back"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/empty"
         tools:ignore="MissingConstraints" />
 
     <ImageButton
-        android:id="@+id/img02"
-        android:layout_width="123dp"
-        android:layout_height="0dp"
-        android:visibility="invisible"
-        app:layout_constraintDimensionRatio="h,1:1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/img01"
-        app:srcCompat="@drawable/empty"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="5dp" />
-
-    <ImageButton
         android:id="@+id/img01"
-        android:layout_width="123dp"
-        android:layout_height="0dp"
-        android:visibility="invisible"
+        android:layout_width="0dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="13dp"
+        android:visibility="visible"
         app:layout_constraintDimensionRatio="h,1:1"
         app:layout_constraintEnd_toStartOf="@+id/img02"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/img00"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/empty"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="5dp" />
+        tools:visibility="visible" />
+
+    <ImageButton
+        android:id="@+id/img02"
+        android:layout_width="0dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="12dp"
+        android:visibility="visible"
+        app:layout_constraintDimensionRatio="h,1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/empty"
+        tools:ignore="MissingConstraints"
+        tools:visibility="visible" />
+
+    <ImageButton
+        android:id="@+id/img10"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="20dp"
+        android:visibility="visible"
+        app:layout_constraintDimensionRatio="h,1:1"
+        app:layout_constraintEnd_toStartOf="@+id/img11"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img00"
+        app:srcCompat="@drawable/empty"
+        tools:ignore="MissingConstraints"
+        tools:visibility="visible" />
+
+    <ImageButton
+        android:id="@+id/img11"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="20dp"
+        android:visibility="visible"
+        app:layout_constraintDimensionRatio="h,1:1"
+        app:layout_constraintEnd_toStartOf="@+id/img12"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/img10"
+        app:layout_constraintTop_toBottomOf="@+id/img01"
+        app:srcCompat="@drawable/empty"
+        tools:ignore="MissingConstraints"
+        tools:visibility="visible" />
 
     <ImageButton
         android:id="@+id/img12"
-        android:layout_width="123dp"
-        android:layout_height="0dp"
-        android:visibility="invisible"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="20dp"
+        android:visibility="visible"
         app:layout_constraintDimensionRatio="h,1:1"
-        app:layout_constraintEnd_toEndOf="@+id/back"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/img11"
+        app:layout_constraintTop_toBottomOf="@+id/img02"
         app:srcCompat="@drawable/empty"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="138dp" />
+        tools:visibility="visible" />
 
     <ImageButton
         android:id="@+id/img20"
-        android:layout_width="123dp"
-        android:layout_height="0dp"
-        android:visibility="invisible"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="20dp"
+        android:visibility="visible"
         app:layout_constraintDimensionRatio="h,1:1"
         app:layout_constraintEnd_toStartOf="@+id/img21"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img10"
         app:srcCompat="@drawable/empty"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="271dp" />
-
-    <ImageButton
-        android:id="@+id/img22"
-        android:layout_width="123dp"
-        android:layout_height="0dp"
-        android:visibility="invisible"
-        app:layout_constraintDimensionRatio="h,1:1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/img21"
-        app:srcCompat="@drawable/empty"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="271dp" />
+        tools:visibility="visible" />
 
     <ImageButton
         android:id="@+id/img21"
-        android:layout_width="123dp"
-        android:layout_height="0dp"
-        android:visibility="invisible"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="20dp"
+        android:visibility="visible"
         app:layout_constraintDimensionRatio="h,1:1"
         app:layout_constraintEnd_toStartOf="@+id/img22"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/img20"
+        app:layout_constraintTop_toBottomOf="@+id/img11"
         app:srcCompat="@drawable/empty"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="274dp" />
+        tools:visibility="visible" />
+
+    <ImageButton
+        android:id="@+id/img22"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="12dp"
+        android:visibility="visible"
+        app:layout_constraintDimensionRatio="h,1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img12"
+        app:srcCompat="@drawable/empty"
+        tools:ignore="MissingConstraints"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/xPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/back"
+        app:srcCompat="@drawable/xplay" />
+
+    <ImageView
+        android:id="@+id/oPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/back"
+        app:srcCompat="@drawable/oplay" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
