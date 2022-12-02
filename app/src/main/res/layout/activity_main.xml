@@ -152,4 +152,24 @@
         tools:ignore="MissingConstraints"
         tools:visibility="visible" />
 
+    <ImageView
+        android:id="@+id/xPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/back"
+        app:srcCompat="@drawable/xplay" />
+
+    <ImageView
+        android:id="@+id/oPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/back"
+        app:srcCompat="@drawable/oplay" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
