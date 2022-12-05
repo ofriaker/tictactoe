@@ -196,6 +196,18 @@
         app:layout_constraintTop_toBottomOf="@+id/back"
         app:srcCompat="@drawable/owin" />
 
+    <ImageView
+        android:id="@+id/noWin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.636"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/back"
+        app:srcCompat="@drawable/nowin" />
+
     <Button
         android:id="@+id/reset_board_btn"
         style="@style/Widget.AppCompat.Button.Colored"
@@ -211,5 +223,101 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/xPlay" />
+
+    <ImageView
+        android:id="@+id/mark1_l2r"
+        android:layout_width="476dp"
+        android:layout_height="405dp"
+        android:visibility="invisible"
+        app:layout_constraintDimensionRatio=""
+        app:layout_constraintEnd_toEndOf="@+id/img02"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mark1"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/mark2_r2l"
+        android:layout_width="476dp"
+        android:layout_height="405dp"
+        android:visibility="invisible"
+        app:layout_constraintDimensionRatio=""
+        app:layout_constraintEnd_toEndOf="@+id/img02"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mark2"
+        tools:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/mark3_left"
+        android:layout_width="476dp"
+        android:layout_height="405dp"
+        android:visibility="invisible"
+        app:layout_constraintDimensionRatio=""
+        app:layout_constraintEnd_toEndOf="@+id/img02"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mark3"
+        tools:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/mark4_center"
+        android:layout_width="476dp"
+        android:layout_height="405dp"
+        android:visibility="invisible"
+        app:layout_constraintDimensionRatio=""
+        app:layout_constraintEnd_toEndOf="@+id/img02"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mark4"
+        tools:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/mark5_right"
+        android:layout_width="476dp"
+        android:layout_height="405dp"
+        android:visibility="invisible"
+        app:layout_constraintDimensionRatio=""
+        app:layout_constraintEnd_toEndOf="@+id/img02"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mark5"
+        tools:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/mark6_up"
+        android:layout_width="476dp"
+        android:layout_height="405dp"
+        android:visibility="invisible"
+        app:layout_constraintDimensionRatio=""
+        app:layout_constraintEnd_toEndOf="@+id/img02"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mark6"
+        tools:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/mark7_middle"
+        android:layout_width="476dp"
+        android:layout_height="405dp"
+        android:visibility="invisible"
+        app:layout_constraintDimensionRatio=""
+        app:layout_constraintEnd_toEndOf="@+id/img02"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mark7"
+        tools:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/mark8_down"
+        android:layout_width="476dp"
+        android:layout_height="405dp"
+        android:visibility="invisible"
+        app:layout_constraintDimensionRatio=""
+        app:layout_constraintEnd_toEndOf="@+id/img02"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mark8"
+        tools:visibility="invisible" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
