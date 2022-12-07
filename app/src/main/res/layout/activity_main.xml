@@ -4,17 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#040303"
+    android:background="@color/white"
     tools:context=".MainActivity">
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/back"
@@ -25,16 +16,308 @@
         android:layout_marginEnd="5dp"
         app:layout_constraintDimensionRatio="w,1:1"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/back" />
 
     <ImageButton
         android:id="@+id/img00"
+        android:layout_width="0dp"
+        android:layout_height="115dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="13dp"
+        android:visibility="visible"
+        app:layout_constraintDimensionRatio="h,1:1"
+        app:layout_constraintStart_toEndOf="@+id/back"
+        app:layout_constraintStart_toStartOf="@+id/back"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/empty"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/img01"
+        android:layout_width="0dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="13dp"
+        android:visibility="visible"
+        app:layout_constraintDimensionRatio="h,1:1"
+        app:layout_constraintEnd_toStartOf="@+id/img02"
+        app:layout_constraintStart_toEndOf="@+id/img00"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/empty"
+        tools:ignore="MissingConstraints"
+        tools:visibility="visible" />
+
+    <ImageButton
+        android:id="@+id/img02"
+        android:layout_width="0dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="12dp"
+        android:visibility="visible"
+        app:layout_constraintDimensionRatio="h,1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/empty"
+        tools:ignore="MissingConstraints"
+        tools:visibility="visible" />
+
+    <ImageButton
+        android:id="@+id/img10"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="20dp"
+        android:visibility="visible"
+        app:layout_constraintDimensionRatio="h,1:1"
+        app:layout_constraintEnd_toStartOf="@+id/img11"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img00"
+        app:srcCompat="@drawable/empty"
+        tools:ignore="MissingConstraints"
+        tools:visibility="visible" />
+
+    <ImageButton
+        android:id="@+id/img11"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="20dp"
+        android:visibility="visible"
+        app:layout_constraintDimensionRatio="h,1:1"
+        app:layout_constraintEnd_toStartOf="@+id/img12"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/img10"
+        app:layout_constraintTop_toBottomOf="@+id/img01"
+        app:srcCompat="@drawable/empty"
+        tools:ignore="MissingConstraints"
+        tools:visibility="visible" />
+
+    <ImageButton
+        android:id="@+id/img12"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="20dp"
+        android:visibility="visible"
+        app:layout_constraintDimensionRatio="h,1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/img11"
+        app:layout_constraintTop_toBottomOf="@+id/img02"
+        app:srcCompat="@drawable/empty"
+        tools:ignore="MissingConstraints"
+        tools:visibility="visible" />
+
+    <ImageButton
+        android:id="@+id/img20"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="20dp"
+        android:visibility="visible"
+        app:layout_constraintDimensionRatio="h,1:1"
+        app:layout_constraintEnd_toStartOf="@+id/img21"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img10"
+        app:srcCompat="@drawable/empty"
+        tools:ignore="MissingConstraints"
+        tools:visibility="visible" />
+
+    <ImageButton
+        android:id="@+id/img21"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="20dp"
+        android:visibility="visible"
+        app:layout_constraintDimensionRatio="h,1:1"
+        app:layout_constraintEnd_toStartOf="@+id/img22"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/img20"
+        app:layout_constraintTop_toBottomOf="@+id/img11"
+        app:srcCompat="@drawable/empty"
+        tools:ignore="MissingConstraints"
+        tools:visibility="visible" />
+
+    <ImageButton
+        android:id="@+id/img22"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="12dp"
+        android:visibility="visible"
+        app:layout_constraintDimensionRatio="h,1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img12"
+        app:srcCompat="@drawable/empty"
+        tools:ignore="MissingConstraints"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/xPlay"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/empty"
-        tools:layout_editor_absoluteX="6dp"
-        tools:layout_editor_absoluteY="16dp" />
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/back"
+        app:srcCompat="@drawable/xplay" />
+
+    <ImageView
+        android:id="@+id/oPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/back"
+        app:srcCompat="@drawable/oplay" />
+
+    <ImageView
+        android:id="@+id/xWin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/back"
+        app:srcCompat="@drawable/xwin" />
+
+    <ImageView
+        android:id="@+id/oWin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.636"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/back"
+        app:srcCompat="@drawable/owin" />
+
+    <ImageView
+        android:id="@+id/noWin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.636"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/back"
+        app:srcCompat="@drawable/nowin" />
+
+    <Button
+        android:id="@+id/reset_board_btn"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        android:background="#673AB7"
+        android:backgroundTint="#724EB1"
+        android:text="Play again"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/xPlay" />
+
+    <ImageView
+        android:id="@+id/mark1_l2r"
+        android:layout_width="476dp"
+        android:layout_height="405dp"
+        android:visibility="invisible"
+        app:layout_constraintDimensionRatio=""
+        app:layout_constraintEnd_toEndOf="@+id/img02"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mark1"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/mark2_r2l"
+        android:layout_width="476dp"
+        android:layout_height="405dp"
+        android:visibility="invisible"
+        app:layout_constraintDimensionRatio=""
+        app:layout_constraintEnd_toEndOf="@+id/img02"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mark2"
+        tools:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/mark3_left"
+        android:layout_width="476dp"
+        android:layout_height="405dp"
+        android:visibility="invisible"
+        app:layout_constraintDimensionRatio=""
+        app:layout_constraintEnd_toEndOf="@+id/img02"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mark3"
+        tools:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/mark4_center"
+        android:layout_width="476dp"
+        android:layout_height="405dp"
+        android:visibility="invisible"
+        app:layout_constraintDimensionRatio=""
+        app:layout_constraintEnd_toEndOf="@+id/img02"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mark4"
+        tools:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/mark5_right"
+        android:layout_width="476dp"
+        android:layout_height="405dp"
+        android:visibility="invisible"
+        app:layout_constraintDimensionRatio=""
+        app:layout_constraintEnd_toEndOf="@+id/img02"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mark5"
+        tools:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/mark6_up"
+        android:layout_width="476dp"
+        android:layout_height="405dp"
+        android:visibility="invisible"
+        app:layout_constraintDimensionRatio=""
+        app:layout_constraintEnd_toEndOf="@+id/img02"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mark6"
+        tools:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/mark7_middle"
+        android:layout_width="476dp"
+        android:layout_height="405dp"
+        android:visibility="invisible"
+        app:layout_constraintDimensionRatio=""
+        app:layout_constraintEnd_toEndOf="@+id/img02"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mark7"
+        tools:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/mark8_down"
+        android:layout_width="476dp"
+        android:layout_height="405dp"
+        android:visibility="invisible"
+        app:layout_constraintDimensionRatio=""
+        app:layout_constraintEnd_toEndOf="@+id/img02"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mark8"
+        tools:visibility="invisible" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
